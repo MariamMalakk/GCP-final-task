@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-deployment
+  labels:
+    app: redis-web
+spec:
+  selector:
+    matchLabels:
+      app: redis-web
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: redis-web
+    spec:
+      containers:
+        - name: redis
+          image: gcr.io/iti-mariam/redis1:latest
+          ports:
+            - containerPort: 80
+      
