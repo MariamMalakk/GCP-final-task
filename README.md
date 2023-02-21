@@ -4,14 +4,14 @@ ________________________________________________________________________________
 ### Overview 
 our infra contain from the following 
 - VPC
-- two privite subnets
-- privite VMs 
-- privite cluster 
+- two private subnets
+- private VMs 
+- priviae cluster 
 - NAT Gateway  
 ___________________________________________________________________________________________________________________________
 ## prerequistets 
   - linux
-  - terrform 
+  - terraform 
   - GCP
   - Docker
   - VScode
@@ -60,16 +60,15 @@ docker push gcr.io/<project-id>/redis1
 _____________________________________________________________________________________________________________________________
 
 ### Create Yaml files with two images and apply them to deploy our app.
-
-
+#### Note: you can copy them from yml files directory.
 ![12-deployments](https://user-images.githubusercontent.com/118521640/220224140-0c15015c-607f-43a1-b586-244349450404.png)
 
 ![13-pods created](https://user-images.githubusercontent.com/118521640/220224249-1d4935be-a1f5-46be-b362-a3c8dc0140ee.png)
 
 ______________________________________________________________________________________________________________________________
 
-## Deploying our to production
-### Once you hit external IP for loadbalacer and port 8000 you will check our app 
+### Check our app:
+#### Once you hit external IP for loadbalacer and port 8000 you will check our app 
 ![14-hit lb port](https://user-images.githubusercontent.com/118521640/220224722-cea45ea2-d9ae-4b7e-979b-356798facc4c.png)
 
 
@@ -84,15 +83,15 @@ ________________________________________________________________________________
 
 _______________________________________________________________________________________________________________________________
 ### Network preferences:
-- Creating VPC and subnets
+#### - Creating VPC and subnets
 ![1-vpc](https://user-images.githubusercontent.com/118521640/220225381-e03c7369-41af-4023-bcfa-7a11a3aa4a80.png)
 
 ![2-subnets](https://user-images.githubusercontent.com/118521640/220225475-d990ee50-0c82-417f-8f57-31d990c8a301.png)
 
-- Creating private VM
+#### - Creating private VM
  ![3-private vm](https://user-images.githubusercontent.com/118521640/220225599-10ca2c4e-dc8e-4631-8799-ca7c201f555f.png)
  
- - Creating NAT gateway
+#### - Creating NAT gateway
 ![5-nat specs](https://user-images.githubusercontent.com/118521640/220225649-c864ce98-c815-4b77-b8ba-2cc925f719ee.png)
 
 
