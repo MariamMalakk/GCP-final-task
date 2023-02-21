@@ -2,14 +2,15 @@
 Hosting a simple web app via private gke using terraform. 
 __________________________________________________________________________________________________________________________
 ### Overview 
-our infra contain from the following 
+this project is to dockerize a web app and deploy it on a private cluster and private vm for more security. All infrastructure is created by terrafom
+#### It consists of:
 - VPC
-- two private subnets
-- private VMs 
-- priviae cluster 
-- NAT Gateway  
+- two private subnets (management-subnet & restricted-subnet)
+- private VM to connect to cluster
+- priviae cluster to deploy our app
+- NAT Gateway 
 ___________________________________________________________________________________________________________________________
-### Prerequisites
+### Prerequisites:
   - linux
   - Terraform 
   - GCP
