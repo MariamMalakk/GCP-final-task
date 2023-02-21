@@ -21,7 +21,7 @@ ________________________________________________________________________________
  gcloud auth login
  ```
 ____________________________________________________________________________________________________________________________
-#### How to build GCP infrastructure:
+### Build GCP infrastructure:
 - By using terraform files 
 - Apply this commands on VScode
 ```bash
@@ -31,14 +31,14 @@ ________________________________________________________________________________
   terraform apply
 ```
 _____________________________________________________________________________________________________________________________
-### How to connect to GCP private Cluster:
-#### Note: - kubectl is already installed as startup script in terraform, check instance.tf file.
+### Connect to GCP private Cluster:
+#### Note: kubectl is already installed as startup script in terraform, check instance.tf file.
 - SSH to private VM 
 - Then connect to the cluster from instance-1
 
 ![8-connect to cluster from vm](https://user-images.githubusercontent.com/118521640/220220562-c792dd41-57cb-415b-8407-36ed4c0b13c2.png)
 ____________________________________________________________________________________________________________________________
-### To dockerize our app and push it on GCR:
+### Dockerize our app and push it on GCR:
 
 ```bash
 
@@ -49,7 +49,7 @@ docker push gcr.io/<project-id>/python-img
 ![10-push python img to gcr](https://user-images.githubusercontent.com/118521640/220222427-f47513fc-ceb4-40b5-a512-9fe91c8d60df.png)
 
 
-### To push redis image to GCR:
+### Push redis image to GCR:
 ```bash
 docker pull redis
 docker -t gcr.io/<project-id>/redis1
@@ -83,15 +83,15 @@ ________________________________________________________________________________
 
 _______________________________________________________________________________________________________________________________
 ### Network preferences:
-#### - Creating VPC and subnets
+- Creating VPC and subnets
 ![1-vpc](https://user-images.githubusercontent.com/118521640/220225381-e03c7369-41af-4023-bcfa-7a11a3aa4a80.png)
 
 ![2-subnets](https://user-images.githubusercontent.com/118521640/220225475-d990ee50-0c82-417f-8f57-31d990c8a301.png)
 
-#### - Creating private VM
+- Creating private VM
  ![3-private vm](https://user-images.githubusercontent.com/118521640/220225599-10ca2c4e-dc8e-4631-8799-ca7c201f555f.png)
  
-#### - Creating NAT gateway
+- Creating NAT gateway
 ![5-nat specs](https://user-images.githubusercontent.com/118521640/220225649-c864ce98-c815-4b77-b8ba-2cc925f719ee.png)
 
 
