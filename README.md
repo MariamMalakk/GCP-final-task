@@ -2,7 +2,7 @@
 Hosting a simple web app via private gke using terraform. 
 __________________________________________________________________________________________________________________________
 ### Overview 
-this project is to dockerize a web app and deploy it on a private cluster via private vm for more security. Infrastructure is created by terraform.
+This project is to dockerize a web app and deploy it on a private cluster via private vm for more security. Infrastructure is created by terraform.
 #### It consists of:
 - VPC
 - two private subnets (management-subnet & restricted-subnet)
