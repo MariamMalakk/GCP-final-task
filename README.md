@@ -9,9 +9,9 @@ our infra contain from the following
 - priviae cluster 
 - NAT Gateway  
 ___________________________________________________________________________________________________________________________
-## prerequistets 
+### Prerequisites
   - linux
-  - terraform 
+  - Terraform 
   - GCP
   - Docker
   - VScode
